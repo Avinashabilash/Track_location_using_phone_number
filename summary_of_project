@@ -1,0 +1,94 @@
+Track Location Using Phone Number
+
+A Python application to track the location of a phone number and display it on an interactive map.
+
+📜 Summary
+This project demonstrates how to use Python libraries such as phonenumbers, opencage, and folium to:
+Determine the location of a phone number.
+Fetch the latitude and longitude of the location using the OpenCage API.
+Display the location on an interactive map.
+⚠️ Note: This app only fetches the general location based on the phone number's registered region. It does NOT provide live GPS tracking or violate privacy laws.
+
+🚀 Features
+Identify the location of a phone number (country/region).
+Determine the carrier (service provider).
+Visualize the location on a map using Folium.
+Save the generated map as an HTML file for sharing or offline use.
+
+🛠️ Prerequisites
+Before running the project, ensure you have the following installed:
+
+Python 3.6 or above
+Pip (Python package manager)
+Install Dependencies
+Run the following command to install the required libraries:
+
+bash
+Copy code
+pip install phonenumbers opencage folium
+
+📂 File Structure
+bash
+Copy code
+Track_location_using_phone_number/
+│
+├── main.py               # Main script for running the app
+├── myphone.py            # File containing the phone number to track
+├── mylocation.html       # Generated map (output file)
+├── __pycache__/          # Cache files
+├── README.md             # Documentation
+└── requirements.txt      # Required Python libraries
+📝 Usage
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/Avinashabilash/Track_location_using_phone_number.git
+cd Track_location_using_phone_number
+Add the phone number you want to track in myphone.py:
+
+python
+Copy code
+number = "+91xxxxxxxxxx"
+Run the script:
+
+bash
+Copy code
+python main.py
+Check the output:
+
+Location and carrier will be displayed in the terminal.
+The generated map will be saved as mylocation.html.
+Open the map in your browser:
+
+bash
+Copy code
+start mylocation.html
+
+🎥 Demo
+
+
+🌐 APIs Used
+OpenCage Geocoder API: Converts location names into geographic coordinates (latitude and longitude).
+OpenCage API Documentation
+phonenumbers Library: Parses, formats, and validates phone numbers.
+
+
+🛡️ Disclaimer
+This project is created for educational purposes only. It does not provide real-time location tracking or violate any privacy norms.
+
+
+💡 Future Enhancements
+Integrate with a frontend to provide a user-friendly interface.
+Add support for multiple numbers in a batch.
+Automate fetching of phone numbers from a database or external API.
+
+🤝 Contributing
+Contributions are welcome! Feel free to:
+Fork the repository.
+Create a branch.
+Submit a pull request.
+
+
+📧 Contact
+For queries, avinashabilash@614gmail.com
